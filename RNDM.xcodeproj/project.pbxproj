@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */; };
+		B4E0ECF12155680800C3A7B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECF02155680800C3A7B1 /* Constants.swift */; };
 		B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FFDB21544ADD0056C113 /* AppDelegate.swift */; };
 		B4E4FFDE21544ADD0056C113 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FFDD21544ADD0056C113 /* MainVC.swift */; };
 		B4E4FFE121544ADD0056C113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E4FFDF21544ADD0056C113 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		66A1190D10F2CD4B2EEECE3D /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
 		7C0ABDDD7D8351C556324327 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
+		B4E0ECF02155680800C3A7B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4E4FFD821544ADC0056C113 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4FFDB21544ADD0056C113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E4FFDD21544ADD0056C113 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B4E0ECEF215567AD00C3A7B1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B4E0ECF02155680800C3A7B1 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B4E4FFCF21544ADC0056C113 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		B4E4FFDA21544ADC0056C113 /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				B4E0ECEF215567AD00C3A7B1 /* Utilities */,
 				B4E0ECEE2154C05100C3A7B1 /* Model */,
 				B4E0ECED2154C04300C3A7B1 /* View */,
 				B4E0ECEC2154C01A00C3A7B1 /* Controller */,
@@ -250,6 +261,7 @@
 				B4E4FFDE21544ADD0056C113 /* MainVC.swift in Sources */,
 				B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */,
 				B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */,
+				B4E0ECF12155680800C3A7B1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
