@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B482CA9A215593DB005C23FB /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482CA99215593DB005C23FB /* Thought.swift */; };
+		B482CA9C21559948005C23FB /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482CA9B21559948005C23FB /* ThoughtCell.swift */; };
 		B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */; };
 		B4E0ECF12155680800C3A7B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECF02155680800C3A7B1 /* Constants.swift */; };
 		B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FFDB21544ADD0056C113 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 		647BBC23AB9A9CEE2A6A646B /* Pods-RNDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.debug.xcconfig"; sourceTree = "<group>"; };
 		66A1190D10F2CD4B2EEECE3D /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
 		7C0ABDDD7D8351C556324327 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B482CA99215593DB005C23FB /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		B482CA9B21559948005C23FB /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 		B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 		B4E0ECF02155680800C3A7B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4E4FFD821544ADC0056C113 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,7 @@
 		B4E0ECED2154C04300C3A7B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B482CA9B21559948005C23FB /* ThoughtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -73,6 +78,7 @@
 		B4E0ECEE2154C05100C3A7B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B482CA99215593DB005C23FB /* Thought.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E4FFDE21544ADD0056C113 /* MainVC.swift in Sources */,
+				B482CA9A215593DB005C23FB /* Thought.swift in Sources */,
 				B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */,
+				B482CA9C21559948005C23FB /* ThoughtCell.swift in Sources */,
 				B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */,
 				B4E0ECF12155680800C3A7B1 /* Constants.swift in Sources */,
 			);
