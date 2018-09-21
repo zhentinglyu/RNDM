@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */; };
 		B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FFDB21544ADD0056C113 /* AppDelegate.swift */; };
-		B4E4FFDE21544ADD0056C113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FFDD21544ADD0056C113 /* ViewController.swift */; };
+		B4E4FFDE21544ADD0056C113 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4FFDD21544ADD0056C113 /* MainVC.swift */; };
 		B4E4FFE121544ADD0056C113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E4FFDF21544ADD0056C113 /* Main.storyboard */; };
 		B4E4FFE321544ADD0056C113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E4FFE221544ADD0056C113 /* Assets.xcassets */; };
 		B4E4FFE621544ADD0056C113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E4FFE421544ADD0056C113 /* LaunchScreen.storyboard */; };
@@ -20,9 +21,10 @@
 		647BBC23AB9A9CEE2A6A646B /* Pods-RNDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.debug.xcconfig"; sourceTree = "<group>"; };
 		66A1190D10F2CD4B2EEECE3D /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
 		7C0ABDDD7D8351C556324327 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 		B4E4FFD821544ADC0056C113 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E4FFDB21544ADD0056C113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4E4FFDD21544ADD0056C113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4E4FFDD21544ADD0056C113 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B4E4FFE021544ADD0056C113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4E4FFE221544ADD0056C113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E4FFE521544ADD0056C113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B4E0ECEC2154C01A00C3A7B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E4FFDD21544ADD0056C113 /* MainVC.swift */,
+				B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E0ECED2154C04300C3A7B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E0ECEE2154C05100C3A7B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B4E4FFCF21544ADC0056C113 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +96,10 @@
 		B4E4FFDA21544ADC0056C113 /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				B4E0ECEE2154C05100C3A7B1 /* Model */,
+				B4E0ECED2154C04300C3A7B1 /* View */,
+				B4E0ECEC2154C01A00C3A7B1 /* Controller */,
 				B4E4FFDB21544ADD0056C113 /* AppDelegate.swift */,
-				B4E4FFDD21544ADD0056C113 /* ViewController.swift */,
 				B4E4FFDF21544ADD0056C113 /* Main.storyboard */,
 				B4E4FFE221544ADD0056C113 /* Assets.xcassets */,
 				B4E4FFE421544ADD0056C113 /* LaunchScreen.storyboard */,
@@ -166,8 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RNDM/Pods-RNDM-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
@@ -181,8 +206,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -204,15 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RNDM-checkManifestLockResult.txt",
 			);
@@ -228,8 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E4FFDE21544ADD0056C113 /* ViewController.swift in Sources */,
+				B4E4FFDE21544ADD0056C113 /* MainVC.swift in Sources */,
 				B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */,
+				B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
         <!--RNDM-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="886" y="-564"/>
         </scene>
-        <!--View Controller-->
+        <!--Add ThoughtVC-->
         <scene sceneID="WbX-cy-QTd">
             <objects>
-                <viewController id="dQf-E2-FYY" sceneMemberID="viewController">
+                <viewController id="dQf-E2-FYY" customClass="AddThoughtVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KuG-yn-FQP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,9 @@
                                     <segment title="crazy"/>
                                 </segments>
                                 <color key="tintColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="dQf-E2-FYY" eventType="valueChanged" id="psK-ea-Dob"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-5W-CSW">
                                 <rect key="frame" x="20" y="124" width="335" height="20"/>
@@ -79,6 +82,9 @@
                                 <state key="normal" title="Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="postBtnTapped:" destination="dQf-E2-FYY" eventType="touchUpInside" id="bv3-4L-LFA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,6 +103,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lch-Vn-hci"/>
                     </view>
+                    <connections>
+                        <outlet property="categorySegment" destination="HBu-1G-5zn" id="ycm-SF-GoU"/>
+                        <outlet property="postBtn" destination="UJO-Se-4aJ" id="YLb-Zz-dEc"/>
+                        <outlet property="thoughtTxt" destination="HB1-py-KaH" id="3BE-nU-ET8"/>
+                        <outlet property="userNameTxt" destination="hj6-5W-CSW" id="h4B-IN-hlx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYP-Sw-vZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
