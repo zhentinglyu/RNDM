@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B41DD5CD2158263E0094AA67 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DD5CC2158263E0094AA67 /* LoginVC.swift */; };
 		B41DD5CF21582DB10094AA67 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DD5CE21582DB10094AA67 /* CreateUserVC.swift */; };
+		B47AE6EC215996B300E2F116 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AE6EB215996B300E2F116 /* CommentsVC.swift */; };
+		B47AE6EE2159A3D600E2F116 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AE6ED2159A3D600E2F116 /* CommentCell.swift */; };
 		B482CA9A215593DB005C23FB /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482CA99215593DB005C23FB /* Thought.swift */; };
 		B482CA9C21559948005C23FB /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482CA9B21559948005C23FB /* ThoughtCell.swift */; };
 		B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */; };
@@ -28,6 +30,8 @@
 		7C0ABDDD7D8351C556324327 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41DD5CC2158263E0094AA67 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B41DD5CE21582DB10094AA67 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
+		B47AE6EB215996B300E2F116 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		B47AE6ED2159A3D600E2F116 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B482CA99215593DB005C23FB /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		B482CA9B21559948005C23FB /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 		B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 				B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */,
 				B41DD5CC2158263E0094AA67 /* LoginVC.swift */,
 				B41DD5CE21582DB10094AA67 /* CreateUserVC.swift */,
+				B47AE6EB215996B300E2F116 /* CommentsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B482CA9B21559948005C23FB /* ThoughtCell.swift */,
+				B47AE6ED2159A3D600E2F116 /* CommentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,9 +283,11 @@
 				B482CA9A215593DB005C23FB /* Thought.swift in Sources */,
 				B41DD5CD2158263E0094AA67 /* LoginVC.swift in Sources */,
 				B4E4FFDC21544ADD0056C113 /* AppDelegate.swift in Sources */,
+				B47AE6EE2159A3D600E2F116 /* CommentCell.swift in Sources */,
 				B482CA9C21559948005C23FB /* ThoughtCell.swift in Sources */,
 				B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */,
 				B4E0ECF12155680800C3A7B1 /* Constants.swift in Sources */,
+				B47AE6EC215996B300E2F116 /* CommentsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
