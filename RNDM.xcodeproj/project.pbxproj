@@ -11,6 +11,7 @@
 		B41DD5CF21582DB10094AA67 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DD5CE21582DB10094AA67 /* CreateUserVC.swift */; };
 		B47AE6EC215996B300E2F116 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AE6EB215996B300E2F116 /* CommentsVC.swift */; };
 		B47AE6EE2159A3D600E2F116 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AE6ED2159A3D600E2F116 /* CommentCell.swift */; };
+		B47AE6F02159F76D00E2F116 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47AE6EF2159F76D00E2F116 /* Comment.swift */; };
 		B482CA9A215593DB005C23FB /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482CA99215593DB005C23FB /* Thought.swift */; };
 		B482CA9C21559948005C23FB /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B482CA9B21559948005C23FB /* ThoughtCell.swift */; };
 		B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */; };
@@ -32,6 +33,7 @@
 		B41DD5CE21582DB10094AA67 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		B47AE6EB215996B300E2F116 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
 		B47AE6ED2159A3D600E2F116 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		B47AE6EF2159F76D00E2F116 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B482CA99215593DB005C23FB /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		B482CA9B21559948005C23FB /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 		B4E0ECEA2154BF5300C3A7B1 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B482CA99215593DB005C23FB /* Thought.swift */,
+				B47AE6EF2159F76D00E2F116 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				B482CA9C21559948005C23FB /* ThoughtCell.swift in Sources */,
 				B4E0ECEB2154BF5300C3A7B1 /* AddThoughtVC.swift in Sources */,
 				B4E0ECF12155680800C3A7B1 /* Constants.swift in Sources */,
+				B47AE6F02159F76D00E2F116 /* Comment.swift in Sources */,
 				B47AE6EC215996B300E2F116 /* CommentsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
