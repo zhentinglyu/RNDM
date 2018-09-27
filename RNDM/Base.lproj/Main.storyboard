@@ -96,9 +96,14 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="optionsImageDark" translatesAutoresizingMaskIntoConstraints="NO" id="JxP-tP-mW5">
+                                                    <rect key="frame" x="331" y="6" width="30" height="32"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DHe-RO-uqQ" firstAttribute="centerY" secondItem="4h7-U5-wl8" secondAttribute="centerY" id="0Uh-7A-8vZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="JxP-tP-mW5" secondAttribute="trailing" constant="14" id="6eR-zO-4Xc"/>
+                                                <constraint firstItem="JxP-tP-mW5" firstAttribute="centerY" secondItem="DHe-RO-uqQ" secondAttribute="centerY" id="7AG-BN-rB2"/>
                                                 <constraint firstItem="JYz-2X-3Du" firstAttribute="leading" secondItem="Nao-uc-mD4" secondAttribute="leadingMargin" id="7d2-Zf-CW5"/>
                                                 <constraint firstItem="4h7-U5-wl8" firstAttribute="top" secondItem="Nao-uc-mD4" secondAttribute="topMargin" id="B3S-4V-zSf"/>
                                                 <constraint firstItem="JYz-2X-3Du" firstAttribute="top" secondItem="RUn-TP-UdG" secondAttribute="bottom" constant="4" id="Dqf-67-6q8"/>
@@ -114,6 +119,7 @@
                                             <outlet property="commentsNumLbl" destination="wfH-wj-QF4" id="0M9-6h-f9P"/>
                                             <outlet property="likesImg" destination="IFC-Te-vSY" id="a3C-eq-4cD"/>
                                             <outlet property="likesNumLbl" destination="9rf-ye-X1Y" id="Nui-bS-gSJ"/>
+                                            <outlet property="optionsMenu" destination="JxP-tP-mW5" id="RVW-bA-Q4r"/>
                                             <outlet property="thoughtTxtLbl" destination="RUn-TP-UdG" id="3DP-GH-GUc"/>
                                             <outlet property="timestampLbl" destination="DHe-RO-uqQ" id="AkZ-lj-3M6"/>
                                             <outlet property="usernameLbl" destination="4h7-U5-wl8" id="C9G-8H-6Jb"/>
@@ -276,14 +282,19 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="optionsImageDark" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-bC-oQL">
+                                                    <rect key="frame" x="341" y="12" width="30" height="30"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="7Sr-fe-XL8" firstAttribute="trailing" secondItem="ZUw-sK-I1c" secondAttribute="trailingMargin" id="2VM-8h-vKY"/>
+                                                <constraint firstItem="aDY-bC-oQL" firstAttribute="centerY" secondItem="mhi-eE-KpF" secondAttribute="centerY" id="2yz-17-qEN"/>
                                                 <constraint firstItem="7Sr-fe-XL8" firstAttribute="leading" secondItem="ZUw-sK-I1c" secondAttribute="leadingMargin" id="Dtj-Xe-RPB"/>
                                                 <constraint firstItem="eQl-ca-wUd" firstAttribute="leading" secondItem="ZUw-sK-I1c" secondAttribute="leadingMargin" id="Er6-jX-Sjz"/>
                                                 <constraint firstItem="eQl-ca-wUd" firstAttribute="top" secondItem="ZUw-sK-I1c" secondAttribute="topMargin" constant="8" id="Le7-rz-WJz"/>
                                                 <constraint firstItem="mhi-eE-KpF" firstAttribute="centerY" secondItem="eQl-ca-wUd" secondAttribute="centerY" id="Neo-om-dUv"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="7Sr-fe-XL8" secondAttribute="bottom" constant="7" id="ZaP-c3-oWK"/>
+                                                <constraint firstItem="aDY-bC-oQL" firstAttribute="trailing" secondItem="ZUw-sK-I1c" secondAttribute="trailingMargin" constant="11" id="f1x-OZ-e98"/>
                                                 <constraint firstItem="mhi-eE-KpF" firstAttribute="leading" secondItem="eQl-ca-wUd" secondAttribute="trailing" constant="8" id="ohT-u4-Kil"/>
                                                 <constraint firstItem="7Sr-fe-XL8" firstAttribute="top" secondItem="eQl-ca-wUd" secondAttribute="bottom" constant="10.5" id="yFX-86-Vlg"/>
                                             </constraints>
@@ -568,6 +579,7 @@
     <resources>
         <image name="addThoughtIcon" width="21" height="24"/>
         <image name="commentIcon" width="26" height="22"/>
+        <image name="optionsImageDark" width="30" height="30"/>
         <image name="starIconFilled" width="20" height="19"/>
     </resources>
 </document>
