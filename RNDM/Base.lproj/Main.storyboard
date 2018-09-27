@@ -301,6 +301,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentTxt" destination="7Sr-fe-XL8" id="zKn-8L-aaC"/>
+                                            <outlet property="optionsMenu" destination="aDY-bC-oQL" id="CwO-fQ-DG5"/>
                                             <outlet property="timestampTxt" destination="mhi-eE-KpF" id="EQ7-CU-0Zg"/>
                                             <outlet property="usernameTxt" destination="eQl-ca-wUd" id="aKp-uq-udS"/>
                                         </connections>
