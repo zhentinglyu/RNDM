@@ -41,6 +41,7 @@ class CommentCell: UITableViewCell {
         
         if comment.userId == Auth.auth().currentUser?.uid {
             optionsMenu.isHidden = false
+            optionsMenu.isUserInteractionEnabled = true
             let tap = UITapGestureRecognizer(target: self, action: #selector(commentOptionsTapped))
             optionsMenu.addGestureRecognizer(tap)
         }
