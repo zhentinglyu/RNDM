@@ -186,14 +186,8 @@
                                     <action selector="categoryChanged:" destination="dQf-E2-FYY" eventType="valueChanged" id="psK-ea-Dob"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-5W-CSW">
-                                <rect key="frame" x="20" y="124" width="335" height="20"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HB1-py-KaH">
-                                <rect key="frame" x="20" y="156" width="335" height="100"/>
+                                <rect key="frame" x="20" y="128" width="335" height="100"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.15076519691780821" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="zPs-8b-akX"/>
@@ -203,7 +197,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJO-Se-4aJ">
-                                <rect key="frame" x="147.5" y="264" width="80" height="35"/>
+                                <rect key="frame" x="147.5" y="236" width="80" height="35"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="914-Fb-32H"/>
@@ -222,13 +216,10 @@
                         <constraints>
                             <constraint firstItem="UJO-Se-4aJ" firstAttribute="centerX" secondItem="KuG-yn-FQP" secondAttribute="centerX" id="2S2-nb-2Nr"/>
                             <constraint firstItem="HBu-1G-5zn" firstAttribute="top" secondItem="lch-Vn-hci" secondAttribute="top" constant="16" id="5b3-mq-ulI"/>
-                            <constraint firstItem="hj6-5W-CSW" firstAttribute="top" secondItem="HBu-1G-5zn" secondAttribute="bottom" constant="12" id="EEN-yL-7yx"/>
-                            <constraint firstItem="lch-Vn-hci" firstAttribute="trailing" secondItem="hj6-5W-CSW" secondAttribute="trailing" constant="20" id="THQ-C0-6fy"/>
-                            <constraint firstItem="HB1-py-KaH" firstAttribute="top" secondItem="hj6-5W-CSW" secondAttribute="bottom" constant="12" id="XSf-D4-DxC"/>
+                            <constraint firstItem="HB1-py-KaH" firstAttribute="top" secondItem="HBu-1G-5zn" secondAttribute="bottom" constant="16" id="SPH-ub-RRe"/>
                             <constraint firstItem="lch-Vn-hci" firstAttribute="trailing" secondItem="HB1-py-KaH" secondAttribute="trailing" constant="20" id="ZvB-Du-sB8"/>
                             <constraint firstItem="HB1-py-KaH" firstAttribute="leading" secondItem="lch-Vn-hci" secondAttribute="leading" constant="20" id="cCH-BZ-DYJ"/>
                             <constraint firstItem="lch-Vn-hci" firstAttribute="trailing" secondItem="HBu-1G-5zn" secondAttribute="trailing" constant="20" id="g67-wX-w0V"/>
-                            <constraint firstItem="hj6-5W-CSW" firstAttribute="leading" secondItem="lch-Vn-hci" secondAttribute="leading" constant="20" id="gdA-3V-hlu"/>
                             <constraint firstItem="UJO-Se-4aJ" firstAttribute="top" secondItem="HB1-py-KaH" secondAttribute="bottom" constant="8" id="mce-Sq-ff3"/>
                             <constraint firstItem="HBu-1G-5zn" firstAttribute="leading" secondItem="lch-Vn-hci" secondAttribute="leading" constant="20" id="vQZ-Tp-ONl"/>
                         </constraints>
@@ -238,7 +229,6 @@
                         <outlet property="categorySegment" destination="HBu-1G-5zn" id="ycm-SF-GoU"/>
                         <outlet property="postBtn" destination="UJO-Se-4aJ" id="YLb-Zz-dEc"/>
                         <outlet property="thoughtTxt" destination="HB1-py-KaH" id="3BE-nU-ET8"/>
-                        <outlet property="userNameTxt" destination="hj6-5W-CSW" id="h4B-IN-hlx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYP-Sw-vZG" userLabel="First Responder" sceneMemberID="firstResponder"/>

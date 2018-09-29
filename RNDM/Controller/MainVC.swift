@@ -19,12 +19,6 @@ enum ThoughtCategory : String {
 
 class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, ThoughtDelegate {
     
-    func thoughtOptionsTapped(thought: Thought) {
-        //This is where we create the alert to handle the deletion.
-        print("The user name wining MainVC is: \(thought.username)")
-    }
-    
-    
     //Outlets
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
@@ -63,7 +57,65 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Thou
             thoughtsListener.remove()
         }
     }
-
+    
+    func thoughtOptionsTapped(thought: Thought) {
+        let alert = UIAlertController(title: "Delete", message: "Do you want to delete your thought?", preferredStyle: .actionSheet)
+        
+        let deleteAction = UIAlertAction(title: "Delete Thought", style: .default) { (action) in
+            
+            self.delete(collection:
+                Firestore.firestore().collection(THOUGHTS_REF).document(thought.documentId)
+                .collection(COMMENTS_REF), completion: { (error) in
+                    if let error = error {
+                        debugPrint("Could not delete subcollection: \(error)")
+                    } else {
+                        Firestore.firestore().collection(THOUGHTS_REF).document(thought.documentId)
+                            .delete(completion: { (error) in
+                                if let error = error {
+                                    debugPrint("Could not delete thought: \(error.localizedDescription)")
+                                } else {
+                                    alert.dismiss(animated: true, completion: nil)
+                                }
+                            })
+                    }
+            })
+            
+        }
+        
+        let cancellAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(deleteAction)
+        alert.addAction(cancellAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func delete(collection: CollectionReference, batchSize: Int = 100, completion: @escaping (Error?) -> ()) {
+        
+        collection.limit(to: batchSize).getDocuments { (docset, error) in
+            guard let docset = docset else {
+                completion(error)
+                return
+            }
+            
+            guard docset.count > 0 else {
+                completion(nil)
+                return
+            }
+            
+            let batch = collection.firestore.batch()
+            docset.documents.forEach { batch.deleteDocument($0.reference) }
+            
+            batch.commit { (batchError) in
+                if let batchError = batchError {
+                    completion(batchError)
+                } else {
+                    self.delete(collection: collection, batchSize: batchSize, completion: completion)
+                }
+            }
+        }
+    }
+    
     @IBAction func categoryChanged(_ sender: Any) {
         switch segmentControl.selectedSegmentIndex {
         case 0:
