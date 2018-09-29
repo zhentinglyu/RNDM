@@ -154,12 +154,13 @@ class CommentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         let alert = UIAlertController(title: "Edit Comment", message: "You can delete or edit", preferredStyle: .actionSheet)
         let deleteAction = UIAlertAction(title: "Delete Comment", style: .default) { (action) in
             //delete the comment
-//            self.firestore.collection(THOUGHTS_REF).document(comment.documentId)
+            //working
+//            self.firestore.collection(THOUGHTS_REF).document(self.thought.documentId)
 //                .collection(COMMENTS_REF).document(comment.documentId).delete(completion: { (error) in
 //                    if let error = error {
 //                        debugPrint("Unable to delete comment: \(error.localizedDescription)")
 //                    } else {
-//                        debugPrint("in else for deletion")
+//                        debugPrint("in else for a comment deletion")
 //                        alert.dismiss(animated: true, completion: nil)
 //                    }
 //                })
@@ -169,20 +170,16 @@ class CommentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
                 do {
                     try thoughtDocument = transaction.getDocument(Firestore.firestore()
                         .collection(THOUGHTS_REF).document(self.thought.documentId))
-
                 } catch let error as NSError {
                     debugPrint("Fetch error: \(error.localizedDescription)")
-
                     return nil
                 }
 
                 guard let oldNumComments = thoughtDocument.data()![NUM_COMMENTS] as? Int else { return nil }
-
                 transaction.updateData([NUM_COMMENTS : oldNumComments - 1], forDocument: self.thoughtRef)
 
-
                 let commentRef =
-                    self.firestore.collection(THOUGHTS_REF).document(comment.documentId)
+                    self.firestore.collection(THOUGHTS_REF).document(self.thought.documentId)
                     .collection(COMMENTS_REF).document(comment.documentId)
 
                 transaction.deleteDocument(commentRef)
